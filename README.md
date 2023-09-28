@@ -30,6 +30,8 @@ After fetching this data, `console.log` the contents of this array.
 
 **Hint:** Are you getting a [429 HTTP code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429) from the server? Check your code for an infinite loop! You will be automatically locked out of the API for up to 1 minute.
 
+![](_figures/step1.png)
+
 ### 2. Display # of Students
 
 In `Classroom.jsx`, display the number of students returned below the search form; for example...
@@ -38,12 +40,15 @@ In `Classroom.jsx`, display the number of students returned below the search for
 There are NUMBER student(s) matching your search.
 ```
 
+![](_figures/step2.png)
 
 ### 3. Displaying Student Names
 
 In `Classroom.jsx`, display a `Student` component for each student, passing down props of the student's data. You must display the student's data using the `Student` component.
 
 Furthermore, make sure to specify a unique `key` for each student; you should use the student's ID as the key. You should make sure that you are **not** getting an error saying `each child in a list should have a unique "key" prop.` in your browser's console log, you will lose points!
+
+![](_figures/step3.png)
 
 ### 4. Formatting Student Data
 
@@ -56,6 +61,8 @@ This "works"... but there is a lot of wasted space on large devices. In `Classro
 
 You can re-size your browser window to test this.
 
+![](_figures/step4.png)
+
 ### 5. Add Other Student Data
 
 There's more to a student than just their name! Modify `Student.jsx` to display all of the other information about a student (except for their ID). How you choose to do this is up to you, but you must display...
@@ -67,6 +74,8 @@ There's more to a student than just their name! Modify `Student.jsx` to display 
 
 
 Furthermore, make sure to specify a unique `key` for each interest; you can assume that each interest is unique per person. You should make sure that you are **not** getting an error saying `each child in a list should have a unique "key" prop.` in your browser's console log, you will lose points!
+
+![](_figures/step5.png)
 
 ### 6. Search Functionality
 
@@ -90,11 +99,15 @@ I would *encourage you* but not *require you* to use declarative over imperative
 
 **Important:** The displayed number of results (see Step 2) should also be updated to reflect the number of students found.
 
+![](_figures/step6.png)
+
 ### 7. Reset Search
 
 In `Classroom.jsx`, add an `onClick` handler so that when the user clicks the "Reset Search" button, the search term fields should be cleared and all students should be displayed.
 
 **Important:** The displayed number of results (see Step 2) should also be updated to reflect the total number of students.
+
+![](_figures/step7.png)
 
 ### 8. Basic Pagination
 
@@ -102,9 +115,13 @@ In `Classroom.jsx`, add an `onClick` handler so that when the user clicks the "R
 
 Up to 24 results should be shown per page. Allow the user to switch between pages via numbered paginated items at the bottom of the page (e.g. 1, 2, 3, 4, etc.). Indicate which page the user is currently on by marking that paginated item as active. When any of the search terms are updated, or if the search is reset, return the user to Page 1.
 
+![](_figures/step8.png)
+
 ### 9. Next & Previous Buttons
 
 In addition to the numbered paginated items, add "Previous" and "Next" buttons. The "Previous" button should be disabled if the user is on the first page, and the "Next" button should be disabled if the user is on the last page. If there are no results, both buttons should be disabled.
+
+![](_figures/step9.png)
 
 ### Done! 🥳
 
